@@ -1,0 +1,1 @@
+This bug occurs when using the `Dimensions` API in React Native to get screen dimensions.  The issue arises when the app is rotated. The dimensions returned by `Dimensions.get('window')` or `Dimensions.get('screen')` do not immediately reflect the new orientation.  This can cause layout issues, particularly if the layout is dependent on the screen's width and height.
